@@ -1,0 +1,92 @@
+site_name: Vocard Docs
+repo_url: https://github.com/ChocoMeow/Vocard
+theme:
+  name: material
+  logo: assets/logo.gif
+  font:
+    text: Poppins
+  icon:
+    annotation: material/plus-circle
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.expand
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.footnote.tooltips
+    - toc.follow
+    - announce.dismiss
+    
+  language: en
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ChocoMeow/Vocard
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/Vocard
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/wRCgB7vBQv
+
+plugins:
+  - search
+
+nav:
+  - Getting Started:
+    - index.md
+    - configuration.md
+    - placeholder.md
+    - Changelog:
+      - changelog/index.md
+    - how-to-upgrade.md
+    
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - toc:
+      permalink: true
+
+copyright: |
+  Copyright &copy; 2024 - present <a href="https://github.com/ChocoMeow/" target="_blank" rel="noopener">ChocoMeow</a>
