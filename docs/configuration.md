@@ -33,6 +33,10 @@ MONGODB_NAME = Vocard
 
 Rename `settings Example.json` to `settings.json` and customize your settings.
 
+!!! warning "Note"
+
+    If you are using Genius as your lyrics search engine, you must install the lyricsgenius module `(pip install lyricsgenius)`
+    
 === "Latest"
 
     ```{title="settings.json" .yaml .annotate} 
@@ -248,7 +252,3 @@ Rename `settings Example.json` to `settings.json` and customize your settings.
     10. You can create your custom embeds and buttons in the player controller. [Example Here](/placeholder/#controller)
     11. You can set a custom cooldown for the command. `Example: "command_name": [The total number of tokens available, The length of the cooldown period in seconds]`
     12. You can set custom aliases in the command. `Example: "command_name": [alias1, alias2, ...]`
-
-!!! warning "Note"
-
-    If you are using Genius as your lyrics search engine, you must install the lyricsgenius module `(pip install lyricsgenius)`

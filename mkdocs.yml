@@ -65,6 +65,7 @@ nav:
     - index.md
     - configuration.md
     - placeholder.md
+    - language.md
     - Changelog:
       - changelog/index.md
     - how-to-upgrade.md
