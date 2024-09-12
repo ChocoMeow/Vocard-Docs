@@ -2,9 +2,8 @@ site_name: Vocard Docs
 repo_url: https://github.com/ChocoMeow/Vocard
 theme:
   name: material
-  logo: assets/logo.gif
-  font:
-    text: Poppins
+  logo: assets/logo.png
+  favicon: assets/logo.png
   icon:
     annotation: material/plus-circle
   features:
@@ -56,19 +55,29 @@ extra:
       link: https://www.patreon.com/Vocard
     - icon: fontawesome/brands/discord
       link: https://discord.gg/wRCgB7vBQv
+  
+  version:
+    provider: mike
+    default: latest
 
 plugins:
   - search
 
 nav:
-  - Getting Started:
-    - index.md
-    - configuration.md
-    - placeholder.md
-    - language.md
-    - Changelog:
+  - Home: index.md
+  - Setup:
+    - setup/setup-guide.md
+    - setup/installing-python.md
+    - Systemd: setup/systemd.md
+  - Configuration:
+    - config/index.md
+    - config/bot-activity.md
+    - config/controller.md
+    - config/language.md
+    - config/how-to-upgrade.md
+  - Changelog:
       - changelog/index.md
-    - how-to-upgrade.md
+
     
 markdown_extensions:
   - admonition
