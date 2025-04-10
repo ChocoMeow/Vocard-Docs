@@ -64,21 +64,32 @@ plugins:
   - search
 
 nav:
-  - Home: index.md
-  - Setup:
-    - setup/setup-guide.md
-    - setup/installing-python.md
-    - Systemd: setup/systemd.md
-  - Configuration:
-    - config/index.md
-    - config/bot-activity.md
-    - config/controller.md
-    - config/language.md
-    - config/how-to-upgrade.md
-  - Changelog:
-      - changelog/index.md
+  - Discord Bot:
+    - index.md
+    - Setup:
+      - bot/setup/index.md
+      - bot/setup/installing-python.md
+      - Systemd: bot/setup/systemd.md
+    - Configuration:
+      - bot/config/index.md
+      - bot/config/bot-activity.md
+      - bot/config/controller.md
+      - bot/config/language.md
+      - bot/config/how-to-upgrade.md
+    - Changelog:
+        - bot/changelog/index.md
+  - Dashboard:
+    - dashboard/index.md
+    - Setup:
+      - dashboard/setup/index.md
+      - Systemd: dashboard/setup/systemd.md
+    - Configuration:
+      - dashboard/config/index.md
+      - dashboard/config/language.md
+      - dashboard/config/how-to-upgrade.md
+    - Changelog:
+        - dashboard/changelog/index.md
 
-    
 markdown_extensions:
   - admonition
   - pymdownx.tabbed:
