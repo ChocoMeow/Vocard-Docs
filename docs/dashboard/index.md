@@ -10,7 +10,7 @@ Welcome to the Vocard Dashboard! This project provides a user-friendly interface
 - **User-Friendly Interface**: Intuitive design for seamless navigation.
 - **Real-time Updates**: Instant feedback on actions taken.
 
-## Example Bot
+## Example Dashboard
 [Visit Vocard Dashboard](https://vocard.xyz/login){ .md-button }
 
 ## Screenshot

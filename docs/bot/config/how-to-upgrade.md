@@ -29,3 +29,10 @@ Install the beta version
 ```
 python update.py -b
 ``` 
+
+Install the Migration Script
+
+To install the migration script (note that this does not include every version), you can review the scripts in the [Vocard-Migration repository](https://github.com/ChocoMeow/Vocard-Magration):
+```
+python update.py -m
+``` 

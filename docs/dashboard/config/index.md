@@ -1,6 +1,6 @@
 # Configuration
 
-## Settings up `settings.json`
+## Step 1: Settings up `settings.json`
 
 Rename `settings Example.json` to `settings.json` and customize your settings.
 
@@ -8,13 +8,13 @@ Rename `settings Example.json` to `settings.json` and customize your settings.
 
     ```{title="settings.json" .yaml .annotate} 
     {
-        "host": "localhost", # (1)
-        "port": "8080", # (2)
+        "host": "0.0.0.0", # (1)
+        "port": "8000", # (2)
         "password": "", # (3)
         "client_id": "", # (4)
         "client_secret_id": "", # (5)
         "secret_key": "", # (6)
-        "redirect_url": "http://127.0.0.1:8080/callback", # (7)
+        "redirect_url": "http://127.0.0.1:8000/callback", # (7)
         "logging": { # (8)
             "file": {
                 "path": "./logs", # (9)
@@ -41,7 +41,19 @@ Rename `settings Example.json` to `settings.json` and customize your settings.
     11. The logging level for the dashboard component of your app. 'INFO' captures general operational messages.
     12. The maximum number of log entries to keep in history, useful for limiting log size.
 
-## Adding Redirect URL
+## Step 2: Enable IPC Client in Your Vocard Bot
+To configure the IPC Client in your Vocard Bot, follow these steps:
+
+1. Open the Configuration File:
+    - Navigate to your Vocard Bot directory and open the `settings.json` file.
+
+2. Enter Your Dashboard Information:
+    - Update the configuration with the correct details based on your dashboard URL.
+    - If your dashboard URL is `http://domain.com:1234`, set the following:
+        - Host: `domain.com`
+        - Port: `1234`
+
+## Step 3: Adding Redirect URL
 1. Open your browser and go to the [Discord Developer Portal].
 2. Select your application.
 3. Navigate to the OAuth2 section.

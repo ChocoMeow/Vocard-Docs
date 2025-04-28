@@ -2,6 +2,28 @@
 
 Each release typically encompasses a variety of enhancements and corrections. Notable updates, along with any new features and significant alterations, are itemized for your convenience.
 
+## 2.7.1 <small>April 19, 2025</small> { id="2.7.1" }
+
+### New Features:
+- Vocard is now available in Polish! [43bf237]
+- A new script to help with database migration. [769adbe]
+
+### Fixes:
+- Resolved issues with playing tracks from sources like Spotify and Apple Music. [ac56a22]
+- Corrected wording in the English language pack. [b31ab2b]
+- Corrected wording in the Russian language pack. [6e74ad4]
+
+### Breaking Changes:
+- Database structure has been reformatted. Please ensure your data is backed up! After upgrading to `v2.7.1`, please run `python update.py -m` for the migration.
+
+Full Changelog: [v2.7.0 to v2.7.1](https://github.com/ChocoMeow/Vocard/compare/v2.7.0...v2.7.1)
+
+[43bf237]: https://github.com/ChocoMeow/Vocard/commit/43bf237
+[769adbe]: https://github.com/ChocoMeow/Vocard/commit/769adbe
+[ac56a22]: https://github.com/ChocoMeow/Vocard/commit/ac56a22
+[b31ab2b]: https://github.com/ChocoMeow/Vocard/commit/b31ab2b
+[6e74ad4]: https://github.com/ChocoMeow/Vocard/commit/6e74ad4
+
 ## 2.7.0 <small>April 10, 2025</small> { id="2.7.0" }
 
 ### New Features:

@@ -62,6 +62,18 @@ extra:
 
 plugins:
   - search
+  - link-embeds:
+      enabled: true
+      name_default: "Vocard Docs"
+      desc_default: "Vocard is a simple music bot. It leads to a comfortable experience which is user-friendly, It supports Youtube, Soundcloud, Spotify, Twitch and more!"
+      image_default: "https://github.com/ChocoMeow/Vocard-Docs/blob/main/docs/assets/banner.webp"
+      image_disabled: false
+      favicon_default: "https://github.com/ChocoMeow/Vocard-Docs/blob/main/docs/assets/logo.webp"
+      favicon_disabled: false
+      favicon_size: 25
+      target: "blank"
+      accent: "212120"
+      verbose: false
 
 nav:
   - Discord Bot:
@@ -69,6 +81,8 @@ nav:
     - Setup:
       - bot/setup/index.md
       - bot/setup/installing-python.md
+      - Docker Windows: bot/setup/docker-windows.md
+      - Docker Linux: bot/setup/docker-linux.md
       - Systemd: bot/setup/systemd.md
     - Configuration:
       - bot/config/index.md
@@ -87,6 +101,11 @@ nav:
       - dashboard/config/index.md
       - dashboard/config/language.md
       - dashboard/config/how-to-upgrade.md
+    - SSL:
+      - dashboard/ssl/index.md
+      - dashboard/ssl/cloudflare.md
+      - dashboard/ssl/cloudflare tunnel.md
+      - dashboard/ssl/nginx.md
     - Changelog:
         - dashboard/changelog/index.md
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../config/how-to-upgrade/">
       
       
-        <link rel="next" href="systemd/">
+        <link rel="next" href="cloudflare/">
       
       
       <link rel="icon" href="../../assets/logo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Setup Guide - Vocard Docs</title>
+        <title>Adding HTTPS to Vocard Dashboard - Vocard Docs</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-guide" class="md-skip">
+        <a href="#adding-https-to-vocard-dashboard" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setup Guide
+              Adding HTTPS to Vocard Dashboard
             
           </span>
         </div>
@@ -874,8 +874,6 @@
                 
   
   
-    
-  
   
   
     
@@ -899,15 +897,17 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../setup/" class="md-nav__link ">
               
   
   
@@ -920,13 +920,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Setup
@@ -942,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="systemd/" class="md-nav__link">
+      <a href="../setup/systemd/" class="md-nav__link">
         
   
   
@@ -1091,8 +1091,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -1118,17 +1120,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ssl/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1141,13 +1141,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             SSL
@@ -1163,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssl/cloudflare/" class="md-nav__link">
+      <a href="cloudflare/" class="md-nav__link">
         
   
   
@@ -1186,7 +1186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssl/cloudflare%20tunnel/" class="md-nav__link">
+      <a href="cloudflare%20tunnel/" class="md-nav__link">
         
   
   
@@ -1209,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssl/nginx/" class="md-nav__link">
+      <a href="nginx/" class="md-nav__link">
         
   
   
@@ -1333,37 +1333,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-python" class="md-nav__link">
+  <a href="#available-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Python
+      Available Methods
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#download-vocard-dashboard" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download Vocard Dashboard
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Download Vocard Dashboard">
+    <nav class="md-nav" aria-label="Available Methods">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#with-docker" class="md-nav__link">
+  <a href="#choose-your-method" class="md-nav__link">
     <span class="md-ellipsis">
-      with docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#with-gif" class="md-nav__link">
-    <span class="md-ellipsis">
-      with gif
+      Choose Your Method
     </span>
   </a>
   
@@ -1371,15 +1353,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration
-    </span>
-  </a>
   
 </li>
       
@@ -1402,49 +1375,25 @@
   
 
 
-<h1 id="setup-guide">Setup Guide<a class="headerlink" href="#setup-guide" title="Permanent link">&para;</a></h1>
-<h2 id="install-python">Install Python<a class="headerlink" href="#install-python" title="Permanent link">&para;</a></h2>
+<h1 id="adding-https-to-vocard-dashboard">Adding HTTPS to Vocard Dashboard<a class="headerlink" href="#adding-https-to-vocard-dashboard" title="Permanent link">&para;</a></h1>
+<p>To enhance security for your Vocard Dashboard, you can choose from the following methods to enable HTTPS:</p>
+<h2 id="available-methods">Available Methods<a class="headerlink" href="#available-methods" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Vocard Dashboard requires Python 3.11 or higher.</li>
-<li>Follow the guidelines here: <a href="../setup/installing-python/">Installing Python</a>.</li>
-</ul>
-<h2 id="download-vocard-dashboard">Download Vocard Dashboard<a class="headerlink" href="#download-vocard-dashboard" title="Permanent link">&para;</a></h2>
-<h3 id="with-docker">with docker <small>recommended</small><a class="headerlink" href="#with-docker" title="Permanent link">&para;</a></h3>
-<p>Utilizing the official <a href="https://docs.docker.com/get-started/">Docker image</a> enables a quick setup, as it conveniently includes all necessary dependencies. To get started, simply pull the image using a terminal command:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Github</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker pull ghcr.io/chocomeow/vocard-dashboard:latest
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<ol>
-<li><a href="#configuration">Configure the bot</a> before starting the docker containers.</li>
-<li>Start the Docker containers in detached mode:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker-compose up -d
-</span></code></pre></div></li>
-</ol>
-<h3 id="with-gif">with git<a class="headerlink" href="#with-gif" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Clone the repository:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git clone https://github.com/ChocoMeow/vocard-dashboard.git
-</span></code></pre></div></li>
-<li>Go to the directory:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cd Vocard Dashboard 
-</span></code></pre></div></li>
-<li>Install required packages, ideally by using a <a href="https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment">virtual environment</a>:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python -m pip install -r requirements.txt
-</span></code></pre></div></li>
-</ol>
-<p>After installing all packages, you must <a href="#configuration">configure the bot before starting</a>.</p>
-<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Rename <code>settings Example.json</code> to <code>settings.json</code> and <a href="../config/">customize your settings</a>.</li>
 <li>
-<p>Now, you can start your bot with <code>python main.py</code>.</p>
+<p><strong><a href="cloudflare">Cloudflare Proxy</a></strong><br />
+  Use Cloudflare's proxy service to secure your traffic with HTTPS easily.</p>
 </li>
-</ol>
+<li>
+<p><strong><a href="cloudflare tunnel">Cloudflare Tunnel</a></strong><br />
+  Set up a secure tunnel from your server to Cloudflare, allowing for more flexible configurations.</p>
+</li>
+<li>
+<p><strong><a href="nginx">Nginx</a></strong><br />
+  Configure Nginx directly on your server for HTTPS, including the use of Let's Encrypt for free SSL certificates.</p>
+</li>
+</ul>
+<h3 id="choose-your-method">Choose Your Method<a class="headerlink" href="#choose-your-method" title="Permanent link">&para;</a></h3>
+<p>Select a method from the list above to get started with securing your Vocard Dashboard. Each method provides distinct advantages, so choose the one that best fits your setup and requirements.</p>
 
 
 
@@ -1482,7 +1431,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Vocard Dashboard">
+          <a href="../config/how-to-upgrade/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to upgrade">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1492,20 +1441,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Vocard Dashboard
+                How to upgrade
               </div>
             </div>
           </a>
         
         
           
-          <a href="systemd/" class="md-footer__link md-footer__link--next" aria-label="Next: Systemd">
+          <a href="cloudflare/" class="md-footer__link md-footer__link--next" aria-label="Next: Using Cloudflare Proxy">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Systemd
+                Using Cloudflare Proxy
               </div>
             </div>
             <div class="md-footer__button md-icon">

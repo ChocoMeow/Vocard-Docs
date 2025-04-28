@@ -1,5 +1,31 @@
 # Configuration
 
+## Setting up `lavalink`
+
+!!! note
+
+    Lavalink is essential for processing and streaming audio to Discord. Without a Lavalink server, you won't be able to play music on Vocard. You can either host your own server or use a public Lavalink server from this [Public Lavalink Website].
+
+    - Vocard requires **Lavalink v4** or higher.
+    - For detailed steps on installing Lavalink, visit the [Lavalink Official Website].
+    - To enable YouTube and advanced audio source support (e.g., Spotify, Apple Music), you **must** install the following plugins:
+        - **YouTube Source Plugin**: [lavalink-devs/youtube-source](https://github.com/lavalink-devs/youtube-source)
+        - **LavaSrc Plugin**: [topi314/LavaSrc](https://github.com/topi314/LavaSrc)
+
+### Required Plugins
+
+To use Vocard with YouTube and other audio sources, configure your Lavalink server to include the YouTube Source and LavaSrc plugins. Add the following to your `application.yml` file under the `lavalink.plugins` section:
+
+```yaml
+lavalink:
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"  # Check latest version at https://github.com/lavalink-devs/youtube-source/releases
+      snapshot: false
+    - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.4.1"  # Check latest version at https://github.com/topi314/LavaSrc/releases
+      snapshot: false
+```
+For a complete and pre-configured `application.yml` template, refer to the [example provided in the Vocard repository](https://github.com/ChocoMeow/Vocard/blob/main/lavalink/application.yml).
+
 ## Settings up `settings.json`
 
 Rename `settings Example.json` to `settings.json` and customize your settings.
