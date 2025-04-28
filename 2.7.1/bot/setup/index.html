@@ -415,6 +415,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -476,6 +480,52 @@
   
   <span class="md-ellipsis">
     Python Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="docker-windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker Windows
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="docker-linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker Linux
     
   </span>
   
@@ -1289,15 +1339,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-lavalink" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Lavalink
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#download-vocard-bot" class="md-nav__link">
     <span class="md-ellipsis">
       Download Vocard Bot
@@ -1364,42 +1405,23 @@
 <li>Vocard requires Python 3.11 or higher.</li>
 <li>Follow the guidelines here: <a href="../setup/installing-python/">Installing Python</a>.</li>
 </ul>
-<h2 id="install-lavalink">Install Lavalink<a class="headerlink" href="#install-lavalink" title="Permanent link">&para;</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Lavalink is essential for processing and streaming audio to Discord. Without a Lavalink server, you won't be able to play music on Vocard. You can either host your own server or use a public Lavalink server from this <a href="https://lavalink.darrennathanael.com/NoSSL/lavalink-without-ssl/">Public Lavalink Website</a>.</p>
-</div>
-<ul>
-<li>Vocard requires Lavalink v4.</li>
-<li>For detailed steps on installing Lavalink, visit the <a href="https://lavalink.dev/getting-started/index.html">Lavalink Offical Website</a>.</li>
-</ul>
 <h2 id="download-vocard-bot">Download Vocard Bot<a class="headerlink" href="#download-vocard-bot" title="Permanent link">&para;</a></h2>
-<h3 id="with-docker">with docker <small>recommended</small><a class="headerlink" href="#with-docker" title="Permanent link">&para;</a></h3>
-<p>Utilizing the official <a href="https://docs.docker.com/get-started/">Docker image</a> enables a quick setup, as it conveniently includes all necessary dependencies. To get started, simply pull the image using a terminal command:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Github</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker pull ghcr.io/chocomeow/vocard:latest
-</span></code></pre></div>
-</div>
-</div>
-</div>
-<ol>
-<li><a href="#configuration">Configure the bot</a> before starting the docker containers.</li>
-<li>Start the Docker containers in detached mode:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker-compose up -d
-</span></code></pre></div></li>
-</ol>
+<h3 id="with-docker">With Docker <small>recommended</small><a class="headerlink" href="#with-docker" title="Permanent link">&para;</a></h3>
+<p>Using the official <a href="https://ghcr.io/chocomeow/vocard">Docker image</a> is the easiest way to set up Vocard, as it includes all necessary dependencies. Follow the platform-specific guide below to get started:</p>
+<ul>
+<li>For <strong>Linux</strong>, follow the <a href="docker-linux/">Docker Setup Guide for Linux</a>.</li>
+<li>For <strong>Windows</strong>, follow the <a href="docker-windows/">Docker Setup Guide for Windows</a>.</li>
+</ul>
 <h3 id="with-gif">with git<a class="headerlink" href="#with-gif" title="Permanent link">&para;</a></h3>
 <ol>
 <li>Clone the repository:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git clone https://github.com/ChocoMeow/Vocard.git
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git clone https://github.com/ChocoMeow/Vocard.git
 </span></code></pre></div></li>
 <li>Go to the directory:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cd Vocard
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cd Vocard
 </span></code></pre></div></li>
 <li>Install required packages, ideally by using a <a href="https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment">virtual environment</a>:
-    <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python -m pip install -r requirements.txt
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python -m pip install -r requirements.txt
 </span></code></pre></div></li>
 </ol>
 <p>After installing all packages, you must <a href="#configuration">configure the bot before starting</a>.</p>
