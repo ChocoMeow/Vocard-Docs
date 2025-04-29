@@ -182,4 +182,4 @@ docker compose logs [service_name]  # View logs for a specific service (e.g., vo
 
 Revisit the [Bot Configuration Guide] to ensure all steps are followed correctly.
 
-[Bot Configuration Guide]: ../config/
+[Bot Configuration Guide]: ../config

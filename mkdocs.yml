@@ -1,4 +1,6 @@
 site_name: Vocard Docs
+site_url: https://docs.vocard.xyz
+site_description: Vocard is a simple music bot. It leads to a comfortable experience which is user-friendly, It supports Youtube, Soundcloud, Spotify, Twitch and more!
 repo_url: https://github.com/ChocoMeow/Vocard
 theme:
   name: material
@@ -62,18 +64,7 @@ extra:
 
 plugins:
   - search
-  - link-embeds:
-      enabled: true
-      name_default: "Vocard Docs"
-      desc_default: "Vocard is a simple music bot. It leads to a comfortable experience which is user-friendly, It supports Youtube, Soundcloud, Spotify, Twitch and more!"
-      image_default: "https://github.com/ChocoMeow/Vocard-Docs/blob/main/docs/assets/banner.webp"
-      image_disabled: false
-      favicon_default: "https://github.com/ChocoMeow/Vocard-Docs/blob/main/docs/assets/logo.webp"
-      favicon_disabled: false
-      favicon_size: 25
-      target: "blank"
-      accent: "212120"
-      verbose: false
+  - social
 
 nav:
   - Discord Bot:

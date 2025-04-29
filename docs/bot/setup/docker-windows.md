@@ -206,4 +206,4 @@ Usually all container failing to start issues are related to syntax errors or wr
 
 Revisit the [Bot Configuration Guide] to ensure all steps are followed correctly.
 
-[Bot Configuration Guide]: ../config/
+[Bot Configuration Guide]: ../config
