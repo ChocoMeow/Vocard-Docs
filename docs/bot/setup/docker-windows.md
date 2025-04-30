@@ -44,7 +44,7 @@ This method uses pre-built Docker images for a quick and straightforward setup.
 
     ```powershell
     Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ChocoMeow/Vocard/refs/heads/main/settings%20Example.json" -OutFile "settings.json"
-    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ChocoMeow/Vocard/refs/heads/main/examples/application.yml" -OutFile "lavalink\application.yml"
+    Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ChocoMeow/Vocard/refs/heads/main/lavalink/application.yml" -OutFile "lavalink\application.yml"
     Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ChocoMeow/Vocard/refs/heads/main/lavalink/Dockerfile-lavalink" -OutFile "lavalink\Dockerfile-lavalink"
     Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ChocoMeow/Vocard/refs/heads/main/docker-compose.yml" -OutFile "docker-compose.yml"
     ```

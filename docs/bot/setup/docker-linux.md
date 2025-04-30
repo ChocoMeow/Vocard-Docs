@@ -35,7 +35,7 @@ Choose one of the following methods to install Vocard. **Method 1 (Pre-built Ima
 
     ```bash
     wget -O settings.json https://raw.githubusercontent.com/ChocoMeow/Vocard/main/settings%20Example.json
-    wget -O lavalink/application.yml https://raw.githubusercontent.com/ChocoMeow/Vocard/main/examples/application.yml
+    wget -O lavalink/application.yml https://raw.githubusercontent.com/ChocoMeow/Vocard/main/lavalink/application.yml
     wget -O lavalink/Dockerfile-lavalink https://raw.githubusercontent.com/ChocoMeow/Vocard/main/lavalink/Dockerfile-lavalink
     wget -O docker-compose.yml https://raw.githubusercontent.com/ChocoMeow/Vocard/main/docker-compose.yml
     ```
