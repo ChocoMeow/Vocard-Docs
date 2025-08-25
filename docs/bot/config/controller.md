@@ -38,7 +38,7 @@ You can create a custom embed and button for the Music Controller in Vocard for 
 | bot_icon | The avatar of the bot. |
 | server_invite_link | The invite url of the support server |
 | invite_link | The invite url of the bot. |
-| t_<name_of_the_translation> | The translation of the text based on your server settings. For example, t_buttonBack will display as 返回 if your language setting is set to Chinese. |
+| t_{name_of_the_translation} | The translation of the text based on your server settings. For example, t_buttonBack will display as 返回 if your language setting is set to Chinese. |
 
 === "Example 1"
     <div class="grid" markdown>
