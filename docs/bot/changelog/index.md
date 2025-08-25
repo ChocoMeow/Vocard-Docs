@@ -2,6 +2,38 @@
 
 Each release typically encompasses a variety of enhancements and corrections. Notable updates, along with any new features and significant alterations, are itemized for your convenience.
 
+## 2.7.2 <small>August 25, 2025</small> { id="2.7.2" }
+
+### New Features:
+- Added customization buttons for the music controller! [164b4b1]
+- Now available in Spanish, French, and Vietnamese! [0329544], [8fda1d2], [f6c2511]
+- Enjoy lyrics for your favorite tracks with Musixmatch. [955d716]
+- Toggle silent mode in settings for uninterrupted listening. [c8fa4e5]
+- Enhanced user experience with local languages in placeholders. [2219820]
+- Tailor your experience with environment-based settings. [6ccc7d]
+- Updated various requirement libraries to their latest versions for better performance.
+
+### Fixes:
+- Resolved issues with the music controller in the request channel. [0e8b3ce]
+- Improved message handling and permission checks for smoother operation. [5c973a7]
+
+### Breaking Changes:
+- All database keys have been changed to snake_case. Please ensure your data is backed up! After upgrading to `v2.7.2`, please run `python update.py -m` for the migration. [d9fb58e]
+
+Full Changelog: [v2.7.1 to v2.7.2](https://github.com/ChocoMeow/Vocard/compare/v2.7.1...v2.7.2)
+
+[164b4b1]: https://github.com/ChocoMeow/Vocard/commit/164b4b1
+[0329544]: https://github.com/ChocoMeow/Vocard/commit/0329544
+[8fda1d2]: https://github.com/ChocoMeow/Vocard/commit/8fda1d2
+[f6c2511]: https://github.com/ChocoMeow/Vocard/commit/f6c2511
+[955d716]: https://github.com/ChocoMeow/Vocard/commit/955d716
+[c8fa4e5]: https://github.com/ChocoMeow/Vocard/commit/c8fa4e5
+[2219820]: https://github.com/ChocoMeow/Vocard/commit/2219820
+[6ccc7d]: https://github.com/ChocoMeow/Vocard/commit/6ccc7d
+[0e8b3ce]: https://github.com/ChocoMeow/Vocard/commit/0e8b3ce
+[5c973a7]: https://github.com/ChocoMeow/Vocard/commit/5c973a7
+[d9fb58e]: https://github.com/ChocoMeow/Vocard/commit/d9fb58e
+
 ## 2.7.1 <small>April 19, 2025</small> { id="2.7.1" }
 
 ### New Features:

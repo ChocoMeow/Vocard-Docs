@@ -1,99 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/changelog/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/changelog/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/config/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/config/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/config/bot-activity/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/config/bot-activity/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/config/buttons/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/config/controller/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/config/controller/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/config/how-to-upgrade/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/config/how-to-upgrade/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/config/language/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/config/language/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/setup/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/setup/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/setup/docker-linux/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/setup/docker-linux/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/setup/docker-windows/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/setup/docker-windows/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/setup/installing-python/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/setup/installing-python/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/bot/setup/systemd/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/bot/setup/systemd/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/changelog/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/changelog/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/config/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/config/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/config/how-to-upgrade/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/config/how-to-upgrade/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/config/language/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/config/language/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/setup/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/setup/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/setup/systemd/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/setup/systemd/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/ssl/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/ssl/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/ssl/cloudflare%20tunnel/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/ssl/cloudflare%20tunnel/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/ssl/cloudflare/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
     <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/ssl/cloudflare/</loc>
-         <lastmod>2025-04-30</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.vocard.xyz/2.7.1/dashboard/ssl/nginx/</loc>
-         <lastmod>2025-04-30</lastmod>
+         <loc>https://docs.vocard.xyz/2.7.2/dashboard/ssl/nginx/</loc>
+         <lastmod>2025-08-25</lastmod>
     </url>
 </urlset>

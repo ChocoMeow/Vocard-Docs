@@ -106,13 +106,9 @@ Choose one of the following methods to install Vocard. **Method 1 (Pre-built Ima
 
 ## Configuration Details
 
-### Essential Settings
-
-#### settings.json
-
 Ensure the MongoDB URL and Lavalink password are correctly set:
 
-```json
+```{title="settings.json" .json}
 {
     "mongodb_url": "mongodb://admin:admin@vocard-db:27017",
     "lavalink": {
@@ -182,4 +178,4 @@ docker compose logs [service_name]  # View logs for a specific service (e.g., vo
 
 Revisit the [Bot Configuration Guide] to ensure all steps are followed correctly.
 
-[Bot Configuration Guide]: ../config
+[Bot Configuration Guide]: ../config/index.md

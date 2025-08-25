@@ -134,9 +134,7 @@ This method builds Vocard from the source code, offering more control over the s
 
 ## Configuration Details
 
-### settings.json (essential bits)
-
-```json
+```{title="settings.json" .json}
 {
     "mongodb_url": "mongodb://admin:admin@vocard-db:27017",
     "lavalink": {
@@ -206,4 +204,4 @@ Usually all container failing to start issues are related to syntax errors or wr
 
 Revisit the [Bot Configuration Guide] to ensure all steps are followed correctly.
 
-[Bot Configuration Guide]: ../config
+[Bot Configuration Guide]: ../config/index.md

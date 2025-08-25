@@ -38,6 +38,7 @@ You can create a custom embed and button for the Music Controller in Vocard for 
 | bot_icon | The avatar of the bot. |
 | server_invite_link | The invite url of the support server |
 | invite_link | The invite url of the bot. |
+| t_<name_of_the_translation> | The translation of the text based on your server settings. For example, t_buttonBack will display as 返回 if your language setting is set to Chinese. |
 
 === "Example 1"
     <div class="grid" markdown>
@@ -73,49 +74,199 @@ You can create a custom embed and button for the Music Controller in Vocard for 
 
 
 ### Buttons
-=== "Usage"
-    ```
-    [button_name]
-    ```
+This documentation provides a detailed breakdown of the custom button configuration in our application.
 
-=== "Usage (Button with color)"
-    ```
-    [{"button": "color"}]
-    ```
+#### Button Styles
+Each style serves a different purpose and can be used to convey the button's function more effectively. For more details on button styles, refer to the [Discord ButtonStyle Documentation](https://discordpy.readthedocs.io/en/stable/interactions/api.html?highlight=button%20style#discord.ButtonStyle)
 
-| Color Name | Description |
-| --- | --- |
-| Grey | Color the button grey. |
-| Red | Color the button red. |
-| Blue | Color the button blue. |
-| Green | Color the button green. |
+| Style Name | Description |
+| --------------------------- | --- |
+| Grey | A neutral color that blends well with most themes, ideal for secondary actions. |
+| Red | A bold color that signifies danger or stop actions, used for critical functions like stopping or disconnecting. |
+| Blurple | A vibrant blue hue that attracts attention, suitable for primary actions like play or start. |
+| Green | Represents success or positive actions. |
 
-| Button Name | Description |
-| --- | --- |
-| Back | Skips back to the previous song. |
-| Resume | Resume or pause the music. |
-| Skip | Skips to the next song. |
-| Stop | Disconnects the bot from your voice channel and chears the queue. |
-| Loop | Changes Loop mode. `[Off, Track, Queue]` |
-| Add | Add the playing track in to your default custom playlist. |
-| VolumeUp | Increase player volume by 20%. |
-| VolumeDown | Decrease player volume by 20%. |
-| VolumeMute | Mute or unmute the player. |
-| Autoplay | Enable or disable autoplay mode. |
-| Shuffle | Randomizes the tracks in the queue. |
-| Forward | Forward 30 seconds in the current track. |
-| Rewind | Rewind 30 seconds in the current track. |
-| Lyrics | Show the lyrics of the current track in an embedded message. |
-| Tracks | If there are tracks in the queue, a drop-down list will be appear. Up to 10 tracks. `(This will take one row)`|
-| Effects | Displays all available audio effects that can be applied to the current song. `(This will take one row)` |
+#### Button Types
+We categorize buttons into three types for easier understanding: `normal buttons`, `state-based buttons`, and `full-width select buttons`.
+
+1. Normal Buttons
+    
+    Normal buttons are simple and can include an emoji, label, and optional style. Here are the details:
+
+    | Button Name | Description |
+    | --- | --- |
+    | Back | Skips back to the previous song. |
+    | Skip | Skips to the next song. |
+    | Stop | Disconnects the bot from your voice channel and chears the queue. |
+    | Forward | Forward 30 seconds in the current track. | |
+    | VolumeUp | Increase player volume by 20%. |
+    | VolumeDown | Decrease player volume by 20%. |
+    | Autoplay | Enable or disable autoplay mode. |
+    | Shuffle | Randomizes the tracks in the queue. |
+    | Rewind | Rewind 30 seconds in the current track. |
+    | Lyrics | Show the lyrics of the current track in an embedded message. |
+
+    === "Back"
+        ```{title="settings.json" .json}
+        "buttons": [
+            {
+                "back": {
+                    "emoji": "⏮️",
+                    "label": "@@t_buttonBack@@",
+                    "style": "grey"
+                }
+            }
+        ]
+        ```
+    
+    === "Stop"
+        ```{title="settings.json" .json}
+        "buttons": [
+            {
+                "stop": {
+                    "emoji": "⏹️",
+                    "label": "@@t_buttonLeave@@",
+                    "style": "red"
+                }
+            }
+        ]
+        ```
+
+2. States Based Button
+    
+    These buttons change based on their current state, allowing for different actions. A key example is the play-pause button.
+
+    | Button Name | Description | States |
+    | --- | --- | --- |
+    | Play-Pause | Resume or pause the music. | pause, resume |
+    | Loop | Changes Loop mode. `[Off, Track, Queue]` | off, track, queue |
+    | VolumeMute | Mute or unmute the player. | mute, muted |
+
+    === "Play-Pause"
+        ```{title="settings.json" .json}
+        "buttons": [
+            {
+                "play-pause": {
+                    "states": {
+                        "pause": {
+                            "emoji": "⏸️",
+                            "label": "@@t_buttonPause@@",
+                            "style": "red"
+                        },
+                        "resume": {
+                            "emoji": "▶️",
+                            "label": "@@t_buttonResume@@",
+                            "style": "green"
+                        }
+                    }
+                }
+            }
+        ]
+        ```
+
+    === "Loop"
+        ```{title="settings.json" .json}
+        "buttons": [
+            {
+                "loop": {
+                    "states": {
+                        "off": {
+                            "emoji": "🚫",
+                            "label": "Off",
+                            "style": "grey"
+                        },
+                        "track": {
+                            "emoji": "🔁",
+                            "label": "Track",
+                            "style": "green"
+                        },
+                        "queue": {
+                            "emoji": "🔂",
+                            "label": "Queue",
+                            "style": "blurple"
+                        }
+                    }
+                }
+            }
+        ]
+        ```
+
+3. Full-Width Select Buttons
+    
+    These buttons span the entire width of the row and are typically used for selecting options, like tracks or effects.
+
+    | Button Name | Description | Additional Options |
+    | --- | --- | --- |
+    | Tracks | If there are tracks in the queue, a drop-down list will be appear. Up to 25 tracks. | max_options (int) |
+    | Effects | Displays all available audio effects that can be applied to the current song. |
+
+    === "Tracks"
+        ```{title="settings.json" .json}
+        "buttons": [
+            {
+                "tracks": {
+                    "label": "@@t_buttonBack@@",
+                    "max_options": 25
+                }
+            }
+        ]
+        ```
+    
+    === "Effects"
+        ```{title="settings.json" .json}
+        "buttons": [
+            {
+                "effects": {
+                    "label": "@@t_buttonLeave@@"
+                }
+            }
+        ]
+        ```
+
+#### Button Example
 
 === "Example 1"
     <img width="459" alt="image" src="https://user-images.githubusercontent.com/94597336/221099779-d458e274-6052-4265-afb2-b232de1b1fd4.png">
 
     ```{title="settings.json" .json}
-    "default_buttons": [
-        ["back", "resume", "skip", {"stop": "red"}, "add"],
-        ["tracks"]
+    "buttons": [
+        {
+            "back": {
+                "emoji": "⏮️",
+                "label": "@@t_buttonBack@@"
+            },
+            "play-pause": {
+                "states": {
+                    "pause": {
+                        "emoji": "⏸️",
+                        "label": "@@t_buttonPause@@"
+                    },
+                    "resume": {
+                        "emoji": "▶️",
+                        "label": "@@t_buttonResume@@"
+                    }
+                }
+            },
+            "skip": {
+                "emoji": "⏭️",
+                "label": "@@t_buttonSkip@@"
+            },
+            "stop": {
+                "emoji": "⏹️",
+                "label": "@@t_buttonLeave@@",
+                "style": "red"
+            },
+            "add-fav": {
+                "emoji": "❤️",
+                "label": ""
+            }
+        },
+        {
+            "tracks": {
+                "label": "@@t_playerDropdown@@",
+                "max_options": 10
+            }
+        }
     ]
     ```
 
@@ -123,20 +274,85 @@ You can create a custom embed and button for the Music Controller in Vocard for 
     <img width="480" alt="image" src="https://user-images.githubusercontent.com/94597336/221099004-9913ee28-5079-488a-b880-902c7ab7ce38.png">
 
     ```{title="settings.json" .json}
-    "default_buttons": [
-        ["back", "resume", "skip", {"stop": "red"}, {"add": "green"}],
-        [{"loop": "green"}, {"volumeup": "blue"}, {"volumedown": "blue"}, {"volumemute": "red"}],
-        ["tracks"]
-    ]
-    ```
-
-=== "Example 3"
-    <img width="480" alt="image" src="https://user-images.githubusercontent.com/94597336/230248758-14ff7e1b-d6db-49f8-94a6-c55fd02f13df.png">
-
-    ```{title="settings.json" .json}
-    "default_buttons": [
-        ["autoplay", "shuffle", {"loop": "green"}, "add"],
-        ["back", "resume", "skip", {"stop": "red"}],
-        ["volumeup", "volumedown", {"mute": "red"}]
+    "buttons": [
+        {
+            "back": {
+                "emoji": "⏮️",
+                "label": "@@t_buttonBack@@"
+            },
+            "play-pause": {
+                "states": {
+                    "pause": {
+                        "emoji": "⏸️",
+                        "label": "@@t_buttonPause@@"
+                    },
+                    "resume": {
+                        "emoji": "▶️",
+                        "label": "@@t_buttonResume@@"
+                    }
+                }
+            },
+            "skip": {
+                "emoji": "⏭️",
+                "label": "@@t_buttonSkip@@"
+            },
+            "stop": {
+                "emoji": "⏹️",
+                "label": "@@t_buttonLeave@@",
+                "style": "red"
+            },
+            "add-fav": {
+                "emoji": "❤️",
+                "label": "green"
+            }
+        },
+        {
+            "loop": {
+                "states": {
+                    "off": {
+                        "emoji": "🚫",
+                        "label": "Loop"
+                    },
+                    "track": {
+                        "emoji": "🔁",
+                        "label": "Loop",
+                        "style": "green"
+                    },
+                    "queue": {
+                        "emoji": "🔂",
+                        "label": "Loop"
+                    }
+                }
+            },
+            "volumeup": {
+                "emoji": "🔊",
+                "label": "@@t_buttonVolumeUp@@",
+                "style": "blurple"
+            },
+            "volumedown": {
+                "emoji": "🔉",
+                "label": "@@t_buttonVolumeDown@@",
+                "style": "blurple"
+            },
+            "volumemute": {
+                "states": {
+                    "muted": {
+                        "emoji": "🔈",
+                        "label": "@@t_buttonVolumeUnmute@@"
+                    },
+                    "mute": {
+                        "emoji": "🔇",
+                        "label": "@@t_buttonVolumeMute@@",
+                        "style": "red"
+                    }
+                }
+            }
+        }
+        {
+            "tracks": {
+                "label": "@@t_playerDropdown@@",
+                "max_options": 10
+            }
+        }
     ]
     ```

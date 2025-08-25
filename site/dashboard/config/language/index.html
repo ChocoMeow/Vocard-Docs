@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://docs.vocard.xyz/2.7.1/dashboard/config/language/">
+        <link rel="canonical" href="https://docs.vocard.xyz/2.7.2/dashboard/config/language/">
       
       
         <link rel="prev" href="../">
@@ -69,7 +69,7 @@
       
         <meta  property="og:description"  content="Vocard is a simple music bot. It leads to a comfortable experience which is user-friendly, It supports Youtube, Soundcloud, Spotify, Twitch and more!" >
       
-        <meta  property="og:image"  content="https://docs.vocard.xyz/2.7.1/assets/images/social/dashboard/config/language.png" >
+        <meta  property="og:image"  content="https://docs.vocard.xyz/2.7.2/assets/images/social/dashboard/config/language.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -77,7 +77,7 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.vocard.xyz/2.7.1/dashboard/config/language/" >
+        <meta  property="og:url"  content="https://docs.vocard.xyz/2.7.2/dashboard/config/language/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
@@ -85,7 +85,7 @@
       
         <meta  name="twitter:description"  content="Vocard is a simple music bot. It leads to a comfortable experience which is user-friendly, It supports Youtube, Soundcloud, Spotify, Twitch and more!" >
       
-        <meta  name="twitter:image"  content="https://docs.vocard.xyz/2.7.1/assets/images/social/dashboard/config/language.png" >
+        <meta  name="twitter:image"  content="https://docs.vocard.xyz/2.7.2/assets/images/social/dashboard/config/language.png" >
       
     
     
@@ -1470,23 +1470,28 @@
 <h2 id="add-translations">Add Translations<a class="headerlink" href="#add-translations" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
+<p><strong>Extract Messages</strong>: Initialize the messages by running:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pybabel<span class="w"> </span>extract<span class="w"> </span>-F<span class="w"> </span>babel.cfg<span class="w"> </span>-o<span class="w"> </span>messages.pot<span class="w"> </span>.
+</span></code></pre></div></p>
+</li>
+<li>
 <p><strong>Create Translation Files</strong>: For each new language, run the following command:
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pybabel<span class="w"> </span>init<span class="w"> </span>-i<span class="w"> </span>messages.pot<span class="w"> </span>-d<span class="w"> </span>translations<span class="w"> </span>-l<span class="w"> </span>LANGUAGE_CODE
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pybabel<span class="w"> </span>init<span class="w"> </span>-i<span class="w"> </span>messages.pot<span class="w"> </span>-d<span class="w"> </span>translations<span class="w"> </span>-l<span class="w"> </span>LANGUAGE_CODE
 </span></code></pre></div>
    Replace <code>LANGUAGE_CODE</code> with the appropriate code (e.g., <code>es</code> for Spanish).</p>
 </li>
 <li>
 <p><strong>Add Translations</strong>: Navigate to:
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>translations/LANGUAGE_CODE/LC_MESSAGES/messages.po
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>translations/LANGUAGE_CODE/LC_MESSAGES/messages.po
 </span></code></pre></div>
    Open the <code>.po</code> file and add your translations:
-   <div class="language-po highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">msgid</span> <span class="s">&quot;Hello, World!&quot;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="err">msgstr &quot;¡Hola, Mundo!&quot;  # Spanish translation</span>
+   <div class="language-po highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">msgid</span> <span class="s">&quot;Hello, World!&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="err">msgstr &quot;¡Hola, Mundo!&quot;  # Spanish translation</span>
 </span></code></pre></div></p>
 </li>
 <li>
 <p><strong>Compile Translations</strong>: After adding translations, compile them:
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pybabel<span class="w"> </span>compile<span class="w"> </span>-d<span class="w"> </span>translations
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pybabel<span class="w"> </span>compile<span class="w"> </span>-d<span class="w"> </span>translations
 </span></code></pre></div></p>
 </li>
 <li>
