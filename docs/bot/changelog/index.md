@@ -18,6 +18,7 @@ Each release typically encompasses a variety of enhancements and corrections. No
 - Improved message handling and permission checks for smoother operation. [5c973a7]
 
 ### Breaking Changes:
+-  Updated the settings structure, `default_buttons` is now simply `buttons`. Please refer to `settings Example.json` [164b4b1]
 - All database keys have been changed to snake_case. Please ensure your data is backed up! After upgrading to `v2.7.2`, please run `python update.py -m` for the migration. [d9fb58e]
 
 Full Changelog: [v2.7.1 to v2.7.2](https://github.com/ChocoMeow/Vocard/compare/v2.7.1...v2.7.2)
