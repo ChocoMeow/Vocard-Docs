@@ -72,8 +72,9 @@ nav:
     - Setup:
       - bot/setup/index.md
       - bot/setup/installing-python.md
-      - Docker Windows: bot/setup/docker-windows.md
-      - Docker Linux: bot/setup/docker-linux.md
+      - Docker: bot/setup/docker.md
+      # - Docker Windows: bot/setup/docker-windows.md
+      # - Docker Linux: bot/setup/docker-linux.md
       - Systemd: bot/setup/systemd.md
     - Configuration:
       - bot/config/index.md

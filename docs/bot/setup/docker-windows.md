@@ -137,6 +137,7 @@ This method builds Vocard from the source code, offering more control over the s
 ```{title="settings.json" .json}
 {
     "mongodb_url": "mongodb://admin:admin@vocard-db:27017",
+    "mongodb_name": "Vocard",
     "lavalink": {
         "password": "youshallnotpass"
     }

@@ -111,6 +111,7 @@ Ensure the MongoDB URL and Lavalink password are correctly set:
 ```{title="settings.json" .json}
 {
     "mongodb_url": "mongodb://admin:admin@vocard-db:27017",
+    "mongodb_name": "Vocard",
     "lavalink": {
         "password": "youshallnotpass"
     }
