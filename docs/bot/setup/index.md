@@ -9,10 +9,11 @@
 
 ### With Docker <small>recommended</small> { #with-docker data-toc-label="with docker" }
 
-Using the official [Docker image](https://ghcr.io/chocomeow/vocard) is the easiest way to set up Vocard, as it includes all necessary dependencies. Follow the platform-specific guide below to get started:
+Using the official [Docker image](https://ghcr.io/chocomeow/vocard) is the easiest way to set up Vocard, as it includes all necessary dependencies. Follow the guide below to get started, regardless of your platform:
 
--   For **Linux**, follow the [Docker Setup Guide for Linux](docker-linux.md).
--   For **Windows**, follow the [Docker Setup Guide for Windows](docker-windows.md).
+- For **Linux and Windows**, follow the unified [Docker Setup Guide](docker.md). 
+
+This guide provides step-by-step instructions for installing and running Vocard using Docker on both operating systems.
 
 ### with git { #with-gif data-toc-label="with gif" }
 
