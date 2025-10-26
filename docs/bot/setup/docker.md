@@ -1,4 +1,4 @@
-# Docker Installation Guide for Vocard with Installer
+# Docker Installation Guide with Installer
 
 This guide simplifies the installation of Vocard using Docker with a installer. Follow the steps below to set up Vocard quickly and easily.
 

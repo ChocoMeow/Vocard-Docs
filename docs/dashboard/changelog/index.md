@@ -2,7 +2,27 @@
 
 Each release typically encompasses a variety of enhancements and corrections. Notable updates, along with any new features and significant alterations, are itemized for your convenience.
 
-## 2.0.2 <small>April 19, 2025</small> { id="2.0.2" }
+## 2.0.3 <small>Oct 26, 2025</small> { id="2.0.3" }
+### New Features:
+- Added Russian translation. [95365a7]
+- Added a health route for health checks in Docker Compose. [ff592fc]
+- Updated the top playlist from Spotify to YouTube. [259b259]
+- Updated the Docker file to support building images for ARM architecture. [e01b969]
+
+### Fixes:
+- Prevented keydown shortcuts when the user is inputting in a text box. [409d323]
+- Fixed an issue with encoding files to UTF-8. [08fedc9]
+
+Full Changelog: [v2.0.2 to v2.0.3](https://github.com/ChocoMeow/Vocard-Dashboard/compare/v2.0.2...v2.0.3)
+
+[259b259]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/259b259
+[409d323]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/409d323
+[e01b969]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/e01b969
+[08fedc9]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/08fedc9
+[95365a7]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/95365a7
+[ff592fc]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/ff592fc
+
+## 2.0.2 <small>Aug 25, 2025</small> { id="2.0.2" }
 ### New Features:
 - Enjoy a revamped UI layout with improved responsiveness for mobile devices. [4a2835f]
 - Now available in Spanish and French! [8937a31], [e5c2055]
@@ -42,7 +62,7 @@ Full Changelog: [v2.0.0 to v2.0.1](https://github.com/ChocoMeow/Vocard-Dashboard
 [40d840c]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/40d840c
 [5f48ded]: https://github.com/ChocoMeow/Vocard-Dashboard/commit/5f48ded
 
-## 2.0.0 <small>April 10, 2025</small> { id="2.0.0" }
+## 2.0.0 <small>Apr 10, 2025</small> { id="2.0.0" }
 ### Important Note:
 Your Vocard bot must be 2.7.0 or above to use this dashboard.
 
